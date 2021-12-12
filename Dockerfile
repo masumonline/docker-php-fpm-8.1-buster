@@ -1,4 +1,4 @@
-FROM php:8.1.0RC5-fpm-buster
+FROM php:8-fpm-buster
 
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
 
